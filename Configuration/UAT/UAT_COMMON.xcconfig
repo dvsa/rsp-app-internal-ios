@@ -1,0 +1,23 @@
+//
+//  UAT_COMMON.xcconfig
+//  DVSA_Officer_FPNs_App
+//
+//  Created by Andrea Scuderi on 28/09/2017.
+//  Copyright © 2017 BJSS. All rights reserved.
+//
+
+// EXTENDED NAME
+EXT_NAME                                                                        = -UAT
+
+// ENVIRONMENT ABREVIATION
+ENV_ABR                                                                         = UAT
+
+// ENVIRONMENT PREPROCESSOR DEFINITIONS
+ENV_GCC_PREPROCESSOR_DEFINITIONS                                                = UAT
+ENV_SWIFT_FLAGS                                                                 = -DUAT
+
+ENV_SNS_ARN_PREFIX                                                              = $(ENV_SNS_ARN_PREFIX_UAT)
+ENV_SNS_ARN_SANDBOX_PREFIX                                                      = $(ENV_SNS_ARN_SANDBOX_PREFIX_UAT)
+
+ENV_ADAL_REDIRECT_SCHEMA                                                        = x-ms-auth-$(PRODUCT_BUNDLE_IDENTIFIER)
+ENV_ADAL_REDIRECT_URI                                                           = $(ENV_ADAL_REDIRECT_SCHEMA):$(SIMPLE_SLASH)/$(PRODUCT_BUNDLE_IDENTIFIER)

@@ -1,0 +1,96 @@
+//
+//  COMMON.xcconfig
+//  DVSA_Officer_FPNs_App
+//
+//  Created by Andrea Scuderi on 28/09/2017.
+//  Copyright © 2017 BJSS. All rights reserved.
+//
+
+#include "SECRETS.xcconfig"
+
+//--------------------------------------------------------------------------
+// GENERIC VALUES
+//--------------------------------------------------------------------------
+
+
+// VERSION NUMBER
+VERSION_NUMBER                                                                  = 1.0
+
+// TEAM 
+DEVELOPMENT_TEAM                                                                = $(ENV_COMMON_DEVELOPMENT_TEAM)
+
+// SWIFT VERSION
+SWIFT_VERSION                                                                   = 4.0
+
+CODE_SIGN_RESOURCE_RULES_PATH                                                   =
+COMMON_GCC_PREPROCESSOR_DEFINITIONS                                             =
+COMMON_SWIFT_FLAGS                                                              =
+
+GCC_PREPROCESSOR_DEFINITIONS                                                    = $(COMMON_GCC_PREPROCESSOR_DEFINITIONS) $(BUILD_TYPE_GCC_PREPROCESSOR_DEFINITIONS) $(ENV_GCC_PREPROCESSOR_DEFINITIONS) $(PODS_CUSTOM_GCC_PREPROCESSOR_DEFINITIONS)
+OTHER_SWIFT_FLAGS                                                                = $(COMMON_SWIFT_FLAGS) $(BUILD_TYPE_SWIFT_FLAGS) $(ENV_SWIFT_FLAGS)
+
+// API Secret Keys - Common
+////////////////////////////
+APP_CRASH_REPORTING_CRASHLYTICS_KEY                                             = $(ENV_APP_CRASH_REPORTING_CRASHLYTICS_KEY)
+APP_CRASH_REPORTING_CRASHLYTICS_KEY_BUILD                                       = $(ENV_APP_CRASH_REPORTING_CRASHLYTICS_KEY_BUILD)
+
+//--------------------------------------------------------------------------
+// FINAL VALUES
+//--------------------------------------------------------------------------
+
+// Bundle Name Prefix - Used for the bundle identifier
+BUNDLE_NAME_PREFIX                                                              = $(ENV_BUNDLE_NAME_PREFIX)
+PRODUCT_BUNDLE_IDENTIFIER                                                       = ${BUNDLE_NAME_PREFIX}-${ENV_ABR}
+NOTIFICATION_BUNDLE_IDENTIFIER                                                  = $(PRODUCT_BUNDLE_IDENTIFIER).notification
+
+BUNDLE_NAME                                                                     = FPNs$(ENV_ABR)-$(PROV_TYPE)
+BUNDLE_DISPLAY_NAME                                                             = ${PROV_TYPE}${EXT_NAME}
+
+
+SIMPLE_SLASH                                                                    = /
+
+// FRAMEWORK SEARCH PATH
+FRAMEWORK_SEARCH_PATHS                                                          = $(PODS_CUSTOM_FRAMEWORK_SEARCH_PATHS) $(inherited)
+
+// LIBRARIES SEARCH PATH
+LIBRARY_SEARCH_PATHS                                                            = $(PODS_CUSTOM_LIBRARY_SEARCH_PATHS)
+
+// HEADER SEARCH PATH
+HEADER_SEARCH_PATHS                                                             = $(PODS_CUSTOM_HEADER_SEARCH_PATHS)
+
+// OTHER CFLAGS
+OTHER_CFLAGS                                                                    = $(PODS_CUSTOM_OTHER_CFLAGS)
+
+// OTHER LDFLAGS
+OTHER_LDFLAGS                                                                   = $(PODS_CUSTOM_OTHER_LDFLAGS) //-lstdc++ -all_load -ObjC
+
+// DISABLE BITCODE
+ENABLE_BITCODE                                                                  = NO
+
+// Suppress specific compiler warnings
+// (e.g. ones that were ignored by previous devs since day 1)
+MOMC_NO_DELETE_RULE_WARNINGS                                                    = YES
+
+MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS                                           = YES
+
+// OPTIMIZATION LEVEL - Optimized - Fastest / Smallest
+GCC_OPTIMIZATION_LEVEL                                                          = s
+
+CLANG_ENABLE_CODE_COVERAGE                                                      = NO
+GCC_GENERATE_TEST_COVERAGE_FILES                                                = NO
+GCC_INSTRUMENT_PROGRAM_FLOW_ARCS                                                = NO
+
+//:configuration = DEV-QA
+DEBUG_INFORMATION_FORMAT                                                        = dwarf-with-dsym
+
+CODE_SIGN_STYLE                                                                 = Manual
+
+
+// Common Configuration
+BUNDLE_URL_SCHEMA                                                               = dvsaofficerfpns
+
+CAMERA_USE                                                                      = Please allow the device to access the phone camera for OCR scanning
+
+
+
+

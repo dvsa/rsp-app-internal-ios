@@ -1,0 +1,20 @@
+//
+//  BUILD_PROV_TYPE_CDIST.xcconfig
+//  DVSA_Officer_FPNs_App
+//
+//  Created by Andrea Scuderi on 28/09/2017.
+//  Copyright © 2018 BJSS. All rights reserved.
+//
+
+// PROVISIONING TYPE
+PROV_TYPE                                                                       = CDIST
+
+// PRE PROCESSOR DEFINITIONS
+BUILD_TYPE_GCC_PREPROCESSOR_DEFINITIONS                                         = CDIST
+BUILD_TYPE_SWIFT_FLAGS                                                          = -DCDIST
+
+// CODE SIGNING
+CODE_SIGN_IDENTITY                                                              = $(ENV_CODE_SIGN_IDENTITY_DIST)
+DEVELOPMENT_TEAM                                                                = $(ENV_COMMON_BJSS_DEVELOPMENT_TEAM)
+
+ENV_SNSPlatformApplicationArn                                                   = $(ENV_SNS_ARN_PREFIX)/$(PRODUCT_BUNDLE_IDENTIFIER)

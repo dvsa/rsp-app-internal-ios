@@ -1,0 +1,44 @@
+//
+//  PROD_CDIST.xcconfig
+//  DVSA_Officer_FPNs_App
+//
+//  Created by Andrea Scuderi on 28/09/2017.
+//  Copyright © 2017 BJSS. All rights reserved.
+//
+
+// SECTRETS CONFIGURATION
+#include "SECRETS.xcconfig"
+
+
+// POD NAME
+#include "Pods/Target Support Files/Pods-DVSA_Officer_FPNs_App/Pods-DVSA_Officer_FPNs_App.prod-cdist.xcconfig"
+
+// SERVER CONFIGURATION
+#include "PROD_COMMON.xcconfig"
+
+// COMMON CONFIGURATION
+#include "../COMMON.xcconfig"
+
+BUNDLE_NAME_PREFIX                                                              = $(ENV_BUNDLE_IDENTIFIER_DVSA)
+
+// BUILD TYPE CONFIGURATION
+#include "../BUILD_PROV_TYPE_CDIST.xcconfig"
+
+SIMPLE_SLASH                                                                    = /
+
+// OVERRIDE
+BUNDLE_NAME                                                                     = $(ENV_BUNDLE_NAME_DVSA)
+BUNDLE_DISPLAY_NAME                                                             = $(ENV_BUNDLE_NAME_DVSA)
+CODE_SIGN_IDENTITY                                                              = $(ENV_CODE_SIGN_IDENTITY_STORE_DVSA)
+DEVELOPMENT_TEAM                                                                = $(ENV_COMMON_DVSA_DEVELOPMENT_TEAM)
+PRODUCT_BUNDLE_IDENTIFIER                                                       = $(ENV_BUNDLE_IDENTIFIER_DVSA)
+NOTIFICATION_BUNDLE_IDENTIFIER                                                  = $(PRODUCT_BUNDLE_IDENTIFIER).notification
+
+// BACKEND
+ENV_ADAL_REDIRECT_SCHEMA                                                        = $(ENV_ADAL_REDIRECT_SCHEMA_PROD)
+ENV_ADAL_REDIRECT_URI                                                           = $(ENV_ADAL_REDIRECT_SCHEMA_PROD):$(SIMPLE_SLASH)/$(PRODUCT_BUNDLE_IDENTIFIER)
+
+// PROVISIONING PROFILE
+PROVISIONING_PROFILE                                                            = $(ENV_PROVISIONING_PROFILE_DVSA_DIST)
+PROVISIONING_PROFILE_SPECIFIER                                                  = $(ENV_PROVISIONING_PROFILE_SPECIFIER_DVSA_DIST)
+ENV_SNSPlatformApplicationArn                                                   = $(ENV_SNS_ARN_PREFIX)/$(PRODUCT_BUNDLE_IDENTIFIER)

@@ -1,0 +1,23 @@
+//
+//  PROD_COMMON.xcconfig
+//  DVSA_Officer_FPNs_App
+//
+//  Created by Andrea Scuderi on 28/09/2017.
+//  Copyright © 2017 BJSS. All rights reserved.
+//
+
+// EXTENDED NAME
+EXT_NAME                                                                        =
+
+// ENVIRONMENT ABREVIATION
+ENV_ABR                                                                         = PROD
+
+SIMPLE_SLASH                                                                    = /
+
+BUNDLE_NAME_PREFIX                                                              = $(ENV_BUNDLE_IDENTIFIER_DVSA)
+
+ENV_SNS_ARN_PREFIX                                                              = $(ENV_SNS_ARN_PREFIX_PROD)
+ENV_SNS_ARN_SANDBOX_PREFIX                                                      = $(ENV_SNS_ARN_SANDBOX_PREFIX_PROD)
+
+ENV_ADAL_REDIRECT_SCHEMA                                                        = x-ms-auth-$(PRODUCT_BUNDLE_IDENTIFIER)
+ENV_ADAL_REDIRECT_URI                                                           = $(ENV_ADAL_REDIRECT_SCHEMA):$(SIMPLE_SLASH)/$(PRODUCT_BUNDLE_IDENTIFIER)

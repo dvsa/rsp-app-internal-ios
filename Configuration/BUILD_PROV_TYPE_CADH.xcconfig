@@ -1,0 +1,19 @@
+//
+//  BUILD_PROV_TYPE_CADH.xcconfig
+//  DVSA_Officer_FPNs_App
+//
+//  Created by Andrea Scuderi on 28/09/2017.
+//  Copyright © 2018 BJSS. All rights reserved.
+//
+
+// PROVISIONING TYPE
+PROV_TYPE                                                                       = CADH
+
+// PRE PROCESSOR DEFINITIONS
+BUILD_TYPE_GCC_PREPROCESSOR_DEFINITIONS                                         = CADH
+BUILD_TYPE_SWIFT_FLAGS                                                          = -DCADH
+
+// CODE SIGNING
+CODE_SIGN_IDENTITY                                                              = $(ENV_CODE_SIGN_IDENTITY_DIST)
+
+ENV_SNSPlatformApplicationArn                                                   = $(ENV_SNS_ARN_PREFIX)/$(PRODUCT_BUNDLE_IDENTIFIER)

@@ -1,0 +1,26 @@
+//
+//  PERF_CENT.xcconfig
+//  DVSA_Officer_FPNs_App
+//
+//  Created by Andrea Scuderi on 28/09/2017.
+//  Copyright © 2017 BJSS. All rights reserved.
+//
+
+// SECTRETS CONFIGURATION
+#include "SECRETS.xcconfig"
+
+// POD NAME
+#include "Pods/Target Support Files/Pods-DVSA_Officer_FPNs_App/Pods-DVSA_Officer_FPNs_App.perf-cent.xcconfig"
+
+// SERVER CONFIGURATION
+#include "PERF_COMMON.xcconfig"
+
+// COMMON CONFIGURATION
+#include "../COMMON.xcconfig"
+
+// BUILD TYPE CONFIGURATION
+#include "../BUILD_PROV_TYPE_CENT.xcconfig"
+
+// PROVISIONING PROFILE
+PROVISIONING_PROFILE                                                             = $(sigh_$(PRODUCT_BUNDLE_IDENTIFIER)_enterprise)
+PROVISIONING_PROFILE_SPECIFIER                                                   = match InHouse $(PRODUCT_BUNDLE_IDENTIFIER)

@@ -1,0 +1,135 @@
+{
+    "Items": [
+        {
+            "status": 200,
+            "error": null,
+            "item": {
+                "ID": "24010910",
+                "Offset": 1513789158.6949999,
+                "Hash": "d88b8140d83d71449fb3a981f82543c96783968a2d4d3ca3fbd5f3a65b2fb3dc",
+                "Value": {
+              "penaltyType" : "FPN",
+              "paymentStatus": "UNPAID",
+              "paymentToken": "4e004da37939110b",
+              "officerID": "sherlock.holmes@dvsa.gov.uk",
+              "siteCode": 7,
+                    "formNo": "FPN 11\/08",
+                    "vehicleDetails": {
+                        "regNo": "uE68857",
+                        "make": "Rolls Royce",
+                        "nationality": "XX"
+                    },
+                    "trailerDetails": {
+                        "number1": "HCzT5TuA9f"
+                    },
+                    "nonEndorsableOffence": [
+                        "INCORRECT USE OF MODE SWITCH - ARTICLE 34(5) EU 165\/2014, 27\/10\/2016"
+                    ],
+                    "referenceNo": "24010910",
+                    "driverDetails": {
+                        "name": "James Moriarty 42",
+                        "address": "9rbQDs663o0QrFpAiyRJ7HcWO6ilidgKfK9ummLfSzPSuLQJSm",
+                        "licenceNumber": "k0JLKDv1wgXB"
+                    },
+                    "officerName": "Officer 76",
+                    "placeWhereIssued": "BLACKWALL TUNNEL A, PAVILLION WAY, METROPOLITAN gvaG",
+                    "paymentDueDate": 1516198564.9639301,
+                    "dateTime": 1513779364.9639301,
+                    "penaltyAmount": 63
+                },
+                "Enabled": true
+            }
+        },
+        {
+            "status": 400,
+            "error": {
+                "ID": "17155624",
+                "error": {
+                    "time": "2017-12-20T16:59:18.940Z",
+                    "statusCode": 400,
+                    "code": "ConditionalCheckFailedException",
+                    "retryable": false,
+                    "message": "The conditional request failed",
+                    "requestId": "0KDEIM0LOQ5G89K3S0TPTKTAHFVV4KQNSO5AEMVJF66Q9ASUAAJG",
+                    "retryDelay": 32.874027152644118
+                }
+            },
+            "item": {
+                "ID": "17155624",
+                "Offset": 1513789158.7260001,
+                "Hash": "ed982183a7b82949f544d0640996d25d6810881bac261724f51994adaa9970c8",
+                "Value": {
+              "penaltyType" : "FPN",
+              "paymentStatus": "UNPAID",
+              "paymentToken": "4e004da37939110b",
+              "officerID": "sherlock.holmes@dvsa.gov.uk",
+              "siteCode": 7,
+                    "formNo": "FPN 11\/08",
+                    "vehicleDetails": {
+                        "regNo": "Wv69787",
+                        "make": "Rolls Royce",
+                        "nationality": "XX"
+                    },
+                    "trailerDetails": {
+                        "number1": "bclgJDwDx8"
+                    },
+                    "nonEndorsableOffence": [
+                        "INCORRECT USE OF MODE SWITCH - ARTICLE 34(5) EU 165\/2014, 27\/10\/2016"
+                    ],
+                    "referenceNo": "17155624",
+                    "driverDetails": {
+                        "name": "James Moriarty 50",
+                        "address": "rLPxLV31RJwzSK0NMiOl8yDijqJGsqL7Nhk rNyzrgInxfFyrS",
+                        "licenceNumber": "3Pj2Ix6KZLDl"
+                    },
+                    "officerName": "Officer 10",
+                    "placeWhereIssued": "BLACKWALL TUNNEL A, PAVILLION WAY, METROPOLITAN dwof",
+                    "paymentDueDate": 1516204687.888031,
+                    "dateTime": 1513785487.8880301,
+                    "penaltyAmount": 109
+                },
+                "Enabled": true
+            }
+        },
+        {
+            "status": 200,
+            "error": null,
+            "item": {
+                "ID": "7273679",
+                "Offset": 1513789158.7850001,
+                "Hash": "c0054988257a8984b7fe1e6191eda3fd98e5d3fc983366c0e28ae5196b4d83b5",
+                "Value": {
+              "penaltyType" : "FPN",
+              "paymentStatus": "UNPAID",
+              "paymentToken": "4e004da37939110b",
+              "officerID": "sherlock.holmes@dvsa.gov.uk",
+              "siteCode": 7,
+                    "formNo": "FPN 11\/08",
+                    "vehicleDetails": {
+                        "regNo": "8G57203",
+                        "make": "Rolls Royce",
+                        "nationality": "XX"
+                    },
+                    "trailerDetails": {
+                        "number1": "O0BFJecyvO"
+                    },
+                    "nonEndorsableOffence": [
+                        "INCORRECT USE OF MODE SWITCH - ARTICLE 34(5) EU 165\/2014, 27\/10\/2016"
+                    ],
+                    "referenceNo": "7273679",
+                    "driverDetails": {
+                        "name": "James Moriarty 50",
+                        "address": "7GxxtesFSLezFV E6TNrln69psrvhFUGdVknD3p5IuoUsucAMB",
+                        "licenceNumber": "kJzXDY7pslHJ"
+                    },
+                    "officerName": "Officer 98",
+                    "placeWhereIssued": "BLACKWALL TUNNEL A, PAVILLION WAY, METROPOLITAN VIMh",
+                    "paymentDueDate": 1516208342.342591,
+                    "dateTime": 1513789142.342591,
+                    "penaltyAmount": 404
+                },
+                "Enabled": true
+            }
+        }
+    ]
+}

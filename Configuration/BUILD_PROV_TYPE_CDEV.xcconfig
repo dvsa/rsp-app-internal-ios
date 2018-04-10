@@ -1,0 +1,30 @@
+//
+//  BUILD_PROV_TYPE_CDEV.xcconfig
+//  DVSA_Officer_FPNs_App
+//
+//  Created by Andrea Scuderi on 28/09/2017.
+//  Copyright © 2018 BJSS. All rights reserved.
+//
+
+// PROVISIONING TYPE
+PROV_TYPE                                                                       = CDEV
+
+// PRE PROCESSOR DEFINITIONS
+BUILD_TYPE_GCC_PREPROCESSOR_DEFINITIONS                                         = DEBUG
+BUILD_TYPE_SWIFT_FLAGS                                                          = -DDEBUG
+
+// CODE SIGNING - Automatic
+CODE_SIGN_IDENTITY                                                              = $(ENV_CODE_SIGN_IDENTITY)
+CODE_SIGN_IDENTITY_STORE                                                        = $(ENV_CODE_SIGN_IDENTITY_STORE)
+
+//:completeSettings = none
+
+//:completeSettings = none
+
+// OPTIMIZATION LEVEL - Allows debugging
+GCC_OPTIMIZATION_LEVEL                                                          = 0
+CLANG_ENABLE_CODE_COVERAGE                                                      = YES
+GCC_GENERATE_TEST_COVERAGE_FILES                                                = NO
+GCC_INSTRUMENT_PROGRAM_FLOW_ARCS                                                = NO
+
+ENV_SNSPlatformApplicationArn                                                   = $(ENV_SNS_ARN_SANDBOX_PREFIX)/$(PRODUCT_BUNDLE_IDENTIFIER)

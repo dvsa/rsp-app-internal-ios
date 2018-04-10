@@ -1,0 +1,90 @@
+PODS:
+  - ADAL (2.6.1):
+    - ADAL/app-lib (= 2.6.1)
+  - ADAL/app-lib (2.6.1):
+    - ADAL/tokencacheheader
+  - ADAL/tokencacheheader (2.6.1)
+  - AWSAPIGateway (2.6.12):
+    - AWSCore (= 2.6.12)
+  - AWSAuthCore (2.6.12):
+    - AWSCore (= 2.6.12)
+  - AWSAuthUI (2.6.12):
+    - AWSAuthCore (= 2.6.12)
+    - AWSCore (= 2.6.12)
+  - AWSCore (2.6.12)
+  - AWSSNS (2.6.12):
+    - AWSCore (= 2.6.12)
+  - Compass (6.0.0)
+  - Crashlytics (3.10.1):
+    - Fabric (~> 1.7.5)
+  - Fabric (1.7.6)
+  - GPUImage (0.1.7)
+  - IQKeyboardManagerSwift (5.0.7)
+  - JWTDecode (2.1.1)
+  - Nimble (7.0.3)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - Quick (1.2.0)
+  - ReachabilitySwift (4.1.0)
+  - Realm (3.1.1):
+    - Realm/Headers (= 3.1.1)
+  - Realm/Headers (3.1.1)
+  - RealmSwift (3.1.1):
+    - Realm (= 3.1.1)
+  - SVProgressHUD (2.2.3)
+  - TesseractOCRiOS (4.0.0)
+  - Whisper (6.0.2)
+  - XCGLogger (6.0.2):
+    - XCGLogger/Core (= 6.0.2)
+  - XCGLogger/Core (6.0.2):
+    - ObjcExceptionBridging
+
+DEPENDENCIES:
+  - ADAL (~> 2.6.0)
+  - AWSAPIGateway (~> 2.6.1)
+  - AWSAuthCore (~> 2.6.1)
+  - AWSAuthUI (~> 2.6.1)
+  - AWSSNS (~> 2.6.1)
+  - Compass
+  - Crashlytics
+  - Fabric
+  - GPUImage
+  - IQKeyboardManagerSwift
+  - JWTDecode (~> 2.1)
+  - Nimble
+  - Quick
+  - ReachabilitySwift (~> 4.1.0)
+  - RealmSwift
+  - SVProgressHUD
+  - TesseractOCRiOS (= 4.0.0)
+  - Whisper (~> 6.0.2)
+  - XCGLogger (~> 6.0.2)
+
+SPEC CHECKSUMS:
+  ADAL: 1f63f8a2ae0c89c818ba0d8c406bdef698998dd7
+  AWSAPIGateway: 37cd3be749412922be0d61976cf7aab4ec8f97ff
+  AWSAuthCore: 55376d5a47c2b5cefdd3f78d247e0a5496fc25c4
+  AWSAuthUI: a6f9a2ca9dbee5908f9ef188d062e56bf30de2fb
+  AWSCore: d0d6e4f6831754aaf98058d2306a016ae71510fe
+  AWSSNS: e0811e07d6b1f0dfefea17bcd45b9b4a5b4b968b
+  Compass: ff30e2056c549ea5cb5b8a307d28ef628e4209ff
+  Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
+  Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
+  JWTDecode: 83e8b381aafe27158d9f692cbdca2b12d61d460c
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
+  RealmSwift: d31937ca6a6ee54acde64ec839523c0a3c04924b
+  SVProgressHUD: a5eaeff664a82dda89809c409ace40183ce91523
+  TesseractOCRiOS: 90638afbe43d082433f2e76b384c7901d23956df
+  Whisper: 169760fc4bab0abf24d5529f9276f95c25cf1025
+  XCGLogger: c9601cae9a8912de34a58666ba931ed3d624dd31
+
+PODFILE CHECKSUM: ecd1a9a2da1c73fc6fc73cad1547ec0117489e94
+
+COCOAPODS: 1.4.0

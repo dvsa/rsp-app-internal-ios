@@ -1,0 +1,24 @@
+//
+//  COMMON_BJSS.xcconfig
+//  DVSA_Officer_FPNs_App
+//
+//  Created by Andrea Scuderi on 28/09/2017.
+//  Copyright © 2017 BJSS. All rights reserved.
+//
+
+//--------------------------------------------------------------------------
+// FINAL VALUES
+//--------------------------------------------------------------------------
+
+// Bundle Name Prefix - Used for the bundle identifier
+BUNDLE_NAME_PREFIX                                                              = ${ENV_BUNDLE_NAME_PREFIX}
+PRODUCT_BUNDLE_IDENTIFIER                                                       = ${BUNDLE_NAME_PREFIX}-${ENV_ABR}
+NOTIFICATION_BUNDLE_IDENTIFIER                                                  = ${PRODUCT_BUNDLE_IDENTIFIER}.notification
+PRODUCT_BUNDLE_IDENTIFIER                                                       = ${BUNDLE_NAME_PREFIX}-${ENV_ABR}
+
+BUNDLE_NAME                                                                     = FPNs$(ENV_ABR)-$(PROV_TYPE)
+BUNDLE_DISPLAY_NAME                                                             = ${PROV_TYPE}${EXT_NAME}
+DEVELOPMENT_TEAM                                                                = $(ENV_COMMON_BJSS_DEVELOPMENT_TEAM)
+
+
+
